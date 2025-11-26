@@ -7,7 +7,8 @@
 2. **gemma_notebook.ipynb** - Jupyter notebook for analysis
 3. **coverage_pipeline.py** - Core coverage pipeline implementation
 4. **requirements.txt** - Python dependencies
-5. **testcases.json** - Test cases before and after 
+5. **testcases.json** - Test cases before and after
+6. *Coverage Reports Folder* - That has all HTML files of detailed coverage reports 
 
 ### Supporting Files
 - **codes/** - Directory containing Python files to analyze
