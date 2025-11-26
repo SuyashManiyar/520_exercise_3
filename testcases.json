@@ -1,0 +1,57 @@
+{
+  "humaneval_114": {
+    "base_test_cases": [
+      "assert candidate([2, 3, 4, 1, 2, 4]) == 1",
+      "assert candidate([-1, -2, -3]) == -6",
+      "assert candidate([-1, -2, -3, 2, -10]) == -14",
+      "assert candidate([-9999999999999999]) == -9999999999999999",
+      "assert candidate([0, 10, 20, 1000000]) == 0",
+      "assert candidate([-1, -2, -3, 10, -5]) == -6",
+      "assert candidate([100, -1, -2, -3, 10, -5]) == -6",
+      "assert candidate([10, 11, 13, 8, 3, 4]) == 3",
+      "assert candidate([100, -33, 32, -1, 0, -2]) == -33",
+      "assert candidate([-10]) == -10",
+      "assert candidate([7]) == 7",
+      "assert candidate([1, -1]) == -1"
+    ],
+    "specification_guided_test_cases": [
+      "assert minSubArraySum([]) == 0",
+      "assert minSubArraySum([1, 2, 3]) == 1",
+      "assert minSubArraySum([-1, -2, -3]) == -6",
+      "assert minSubArraySum([-2, 1, -3, 4, -1, 2, 1, -5, 4]) == -5",
+      "assert minSubArraySum([1]) == 1",
+      "assert minSubArraySum([-1]) == -1",
+      "assert minSubArraySum([2, -1, 2]) == -1",
+      "assert minSubArraySum([-2, -3, 4, -1, -2, 1, 5, -3]) == -5",
+      "assert minSubArraySum([0, 0, 0]) == 0",
+      "assert minSubArraySum([-1, 0, -2]) == -3",
+      "assert minSubArraySum([1, -1, 1, -1]) == -1",
+      "assert minSubArraySum([-1, -1, -1]) == -3",
+      "assert minSubArraySum([1, 2, -3, 4, -5]) == -5",
+      "assert minSubArraySum([-4, -3, -2, -1]) == -10",
+      "assert minSubArraySum([5, 4, -1, 7, 8]) == -1"
+    ]
+  },
+  "apps_1763": {
+    "base_test_cases": [
+      "assert candidate('3 1 100 100\\n1 3 8') == '12'",
+      "assert candidate('3 100 1 100\\n1 3 8') == '9'",
+      "assert candidate('3 100 100 1\\n1 3 8') == '4'",
+      "assert candidate('5 1 2 4\\n5 5 3 6 5') == '4'",
+      "assert candidate('5 1 2 2\\n5 5 3 6 5') == '3'",
+      "assert candidate('10 7 8 3\\n3 10 4 9 2 7 6 10 4 8') == '57'",
+      "assert candidate('10 7122 8827 3205\\n452685204 144160553 743427456 403576146 888744473 313727757 22025193 886601085 576370788 787974081') == '4081476227653'",
+      "assert candidate('100 52 92 72\\n67 100 56 15 0 92 26 74 44 61 6 44 45 19 22 19 9 85 67 78 24 61 81 99 62 84 5 71 11 65 5 97 9 72 11 81 81 64 65 91 52 21 20 53 68 91 4 75 84 88 72 27 48 23 9 65 14 6 54 55 6 1 89 78 40 45 98 45 27 51 94 72 67 81 20 19 38 64 14 40 57 21 82 99 37 92 21 22 30 14 65 93 60 8 63 60 27 30 32 11') == '95816'",
+      "assert candidate('10 4078 1859 607\\n160396657 831922387 330524879 901162754 847008736 781626686 496115244 470330335 824475169 620982654') == '639731251326'",
+      "assert candidate('10 1299 4362 8516\\n177913931 857265729 858027469 743427538 70328308 334897178 739985290 903278439 602456716 623851298') == '3721721948256'",
+      "assert candidate('10 8521 9022 6018\\n195431204 251205289 385530059 954288541 703713298 183134963 983855337 409855471 11842043 921687235') == '9408102096630'",
+      "assert candidate('10 7901 3681 1769\\n286577406 276548631 281628869 796553324 632065579 736405456 932758091 211399795 789823590 924555879') == '2284083174243'"
+    ],
+    "specification_guided_test_cases": [
+      "assert candidate('') == '0'",
+      "assert candidate('1 1 1 1') == '0'",
+      "assert candidate('1 2 3 4 10') == '0'",
+      "assert candidate('3 1 1 1 5 5 5') == '0'"
+    ]
+  }
+}
