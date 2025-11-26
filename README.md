@@ -1,6 +1,4 @@
-# Required Code Base
 
-This folder contains only the essential files needed to run the coverage analysis.
 
 ## Files Included
 
